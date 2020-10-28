@@ -4,10 +4,10 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
-    <TextView
+    <CheckBox
         android:id="@+id/color_label"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:focusable="false"
         android:focusableInTouchMode="false"
