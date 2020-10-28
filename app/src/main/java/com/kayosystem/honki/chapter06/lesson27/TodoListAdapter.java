@@ -43,11 +43,11 @@ public class TodoListAdapter extends ArrayAdapter<Todo> {
         }
 
         //カラーラベルをセット
-        int color = getItem(position).getColorLabel();
-        holder.tvColorLabel.setBackgroundResource(getColorLabelResource(color));
-        if (!TextUtils.isEmpty(value)) {
-            holder.tvColorLabel.setText(value.substring(0, 1));
-        }
+        // int color = getItem(position).getColorLabel();
+        //holder.tvColorLabel.setBackgroundResource(getColorLabelResource(color));
+        //if (!TextUtils.isEmpty(value)) {
+            //holder.tvColorLabel.setText(value.substring(0, 0));
+        //}
 
         //日付をセット
         String createdtime = getCreatedTime(getItem(position).getCreatedTime());
