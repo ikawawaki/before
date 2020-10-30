@@ -1,9 +1,12 @@
 package com.kayosystem.honki.chapter06.lesson27;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.List;
+
+import android.view.View;
 import android.widget.FrameLayout;
 
 
@@ -82,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
 
     public List<Todo> getTodoList() {
         return mTodoList;
+    }
+
+    public void onMoreList(View v){
+        Intent intent = new Intent(this,MoreList.class);
+        startActivity(intent);
     }
 
     /**

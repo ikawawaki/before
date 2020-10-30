@@ -5,22 +5,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/more"
+        android:onClick="onMoreList"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="113dp"
+        android:layout_marginBottom="16dp"
+        android:text="もっと見る"
+        android:textSize="20sp" />
+
     <!--TODOリストを表示するListView-->
+
     <ListView
         android:id="@+id/todo_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true" />
+        android:layout_height="600dp"
+        android:layout_above="@+id/more"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp" />
 
     <!--<ImageView
         android:id="@+id/hamu"
         android:scaleType="fitEnd"
         android:src="@drawable/hamusuke"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
         -->
 
     <!--TODOリストを新規作成するFloatingActionButton-->
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/create_todo"
         android:layout_width="wrap_content"
